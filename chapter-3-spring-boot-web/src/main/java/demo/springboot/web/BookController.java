@@ -43,7 +43,7 @@ public class BookController {
      * 通过 @RequestBody 绑定实体参数，也通过 @RequestParam 传递参数
      */
     @RequestMapping(value = "/create", method = RequestMethod.POST)
-    public Book postBook(@RequestBody Book book) {
+    public Book postBook(Book book) {
         return bookService.insertByBook(book);
     }
 
